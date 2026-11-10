@@ -1,0 +1,853 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Stringfellow Building Contractors | Builders in Coppull, Chorley since 1969</title>
+<meta name="description" content="Family-run building contractors in Coppull, near Chorley, since 1969. Extensions, renovations, kitchens, bathrooms, disabled adaptations, roofing and groundworks across the North West. Free quotes.">
+<meta name="theme-color" content="#14202E">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --brand:#E2A33A; --brand-rgb:226,163,58; --brand-lt:#F2BE62; --brand-dp:#B97C1B;
+  --ink:#14202E; --ink-rgb:20,32,46; --ink-1:#1B2A3B; --ink-2:#22344A; --ink-deep:#0C1520; --ink-deep-rgb:12,21,32;
+  --on-ink:#EEF1F5; --on-ink-2:#C9D1DC; --on-ink-muted:#94A1B3;
+  --on-paper:#17212D; --on-paper-2:#3D4A5A; --muted:#647184;
+  --paper:#FFFFFF; --paper-2:#F4F2EE; --paper-3:#E8E4DD; --line:#E3DFD8;
+  --fb:#1877F2;
+  --display:"Archivo",Inter,system-ui,sans-serif;
+  --sans:Inter,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  --r:10px; --wrap:1200px; --pad:clamp(16px,3.6vw,36px);
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{margin:0;font-family:var(--sans);color:var(--on-paper);background:var(--paper);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3,h4{font-family:var(--display);line-height:1.08;margin:0}
+p{margin:0}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 var(--pad)}
+.pad{padding:clamp(56px,8vw,104px) 0}
+.eyebrow{font-family:var(--display);font-weight:700;font-size:.74rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+.dark .eyebrow{color:var(--brand)}
+.h2{font-size:clamp(30px,4.6vw,50px);font-weight:900;text-transform:uppercase;letter-spacing:-.01em;color:var(--ink);margin-top:10px}
+.dark .h2{color:#fff}
+.lead{color:var(--on-paper-2);font-size:1.05rem;max-width:620px;margin-top:12px}
+.dark .lead{color:var(--on-ink-2)}
+.center{text-align:center}
+.center .lead{margin-left:auto;margin-right:auto}
+.dark{background:var(--ink);color:var(--on-ink)}
+.tint{background:var(--paper-2)}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;gap:10px;font-family:var(--display);font-weight:800;font-size:.86rem;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;padding:15px 24px;border-radius:8px;border:2px solid transparent;cursor:pointer;transition:transform .2s ease,background .2s ease,color .2s ease,filter .2s ease;white-space:nowrap}
+.btn:hover{transform:translateY(-2px)}
+.btn svg{width:18px;height:18px;flex:none}
+.btn-brand{background:var(--brand);color:var(--ink)}
+.btn-brand:hover{filter:brightness(1.07)}
+.btn-ghost{border-color:rgba(255,255,255,.6);color:#fff;background:rgba(255,255,255,.04);backdrop-filter:blur(4px)}
+.btn-ghost:hover{background:#fff;color:var(--ink)}
+.btn-outline{border-color:var(--ink);color:var(--ink)}
+.btn-outline:hover{background:var(--ink);color:#fff}
+.btn-fb{background:var(--fb);color:#fff}
+
+/* image slots: real photo when present, styled placeholder when not */
+.ph{position:relative;background-color:var(--ink-1);background-image:var(--img);background-size:cover;background-position:var(--pos-img,center)}
+.ph.missing{background-image:repeating-linear-gradient(135deg,rgba(255,255,255,.035) 0 2px,transparent 2px 26px),radial-gradient(120% 90% at 20% 10%,var(--ink-2),var(--ink-deep))}
+.ph.missing::before{content:attr(data-label);position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:max-content;max-width:80%;text-align:center;font:600 .72rem/1.4 var(--sans);letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.42);padding:30px 0 0;background:no-repeat center top/22px url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23ffffff' stroke-opacity='.4' stroke-width='1.6'%3E%3Cpath d='M3 7h4l2-3h6l2 3h4v13H3z'/%3E%3Ccircle cx='12' cy='13' r='4'/%3E%3C/svg%3E");pointer-events:none;z-index:0}
+
+.svc .ph.missing::before,.ba-slider .ph.missing::before{top:30%}
+.ba-before.missing::before{left:25%}.ba-after.missing::before{left:75%}
+
+/* header */
+.nav{position:fixed;inset:0 0 auto;z-index:50;transition:background .3s ease,box-shadow .3s ease}
+.nav.solid{background:rgba(var(--ink-rgb),.97);box-shadow:0 8px 30px rgba(0,0,0,.25)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;height:76px}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none;color:#fff}
+.logo-mark{width:44px;height:44px;border-radius:8px;background:var(--brand);display:grid;place-items:center;color:var(--ink);font:900 1.5rem/1 var(--display)}
+.logo-txt b{display:block;font:900 1.12rem/1 var(--display);letter-spacing:.06em;text-transform:uppercase}
+.logo-txt small{display:block;font:600 .64rem/1 var(--sans);letter-spacing:.22em;text-transform:uppercase;color:var(--on-ink-muted);margin-top:6px}
+.nav-links{display:flex;gap:26px;list-style:none;margin:0;padding:0}
+.nav-links a{text-decoration:none;font-weight:600;font-size:.9rem;color:var(--on-ink-2);transition:color .2s}
+.nav-links a:hover{color:#fff}
+.nav-call{display:flex;align-items:center;gap:10px;background:var(--brand);color:var(--ink);text-decoration:none;padding:8px 16px;border-radius:8px}
+.nav-call svg{width:18px;height:18px}
+.nav-call small{display:block;font:700 .58rem/1 var(--display);letter-spacing:.14em;text-transform:uppercase}
+.nav-call b{display:block;font:800 1rem/1.15 var(--display)}
+.burger{display:none;background:none;border:0;color:#fff;padding:8px;cursor:pointer}
+.burger svg{width:26px;height:26px}
+
+/* hero: crossfading slides with a slow Ken Burns push */
+.hero{position:relative;height:min(92vh,800px);min-height:580px;overflow:hidden;background:var(--ink-deep);color:#fff}
+.hero-slide{position:absolute;inset:0;opacity:0;transform:scale(1.14);transition:opacity 1.6s ease}
+.hero-slide.on{opacity:1;animation:kb 9s ease-out forwards}
+@keyframes kb{from{transform:scale(1.14) translate(1.5%,1%)}to{transform:scale(1.02) translate(0,0)}}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(var(--ink-deep-rgb),.55) 0%,rgba(var(--ink-deep-rgb),.25) 34%,rgba(var(--ink-deep-rgb),.6) 72%,rgba(var(--ink-deep-rgb),.92) 100%),radial-gradient(60% 60% at 50% 55%,rgba(var(--ink-deep-rgb),.35),transparent 70%)}
+.hero-in{position:relative;z-index:2;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding-top:60px}
+.pill{display:inline-flex;align-items:center;gap:9px;font:700 .7rem/1 var(--display);letter-spacing:.16em;text-transform:uppercase;padding:9px 16px;border-radius:999px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.22);backdrop-filter:blur(6px)}
+.pill i{width:7px;height:7px;border-radius:50%;background:var(--brand)}
+.hero h1{font-size:clamp(34px,6.4vw,74px);font-weight:900;text-transform:uppercase;letter-spacing:-.015em;margin:22px 0 0;max-width:960px;text-shadow:0 4px 30px rgba(0,0,0,.35)}
+.hero h1 em{font-style:normal;color:var(--brand)}
+.hero-sub{font-size:clamp(15px,2vw,18.5px);color:#E3E8EF;max-width:660px;margin:20px auto 0}
+.hero-cta{display:flex;gap:14px;flex-wrap:wrap;justify-content:center;margin-top:32px}
+.hero-dots{position:absolute;z-index:3;bottom:26px;left:50%;transform:translateX(-50%);display:flex;gap:8px}
+.hero-dots button{width:26px;height:4px;border-radius:4px;border:0;background:rgba(255,255,255,.35);cursor:pointer;padding:0;transition:background .3s,width .3s}
+.hero-dots button.on{background:var(--brand);width:42px}
+
+/* trust bar */
+.trust{background:var(--ink);color:#fff;border-top:1px solid rgba(255,255,255,.06)}
+.trust .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;padding-top:22px;padding-bottom:22px}
+.t-item{display:flex;align-items:center;gap:12px;justify-content:center}
+.t-item svg{width:28px;height:28px;color:var(--brand);flex:none}
+.t-item b{display:block;font:800 .98rem/1.2 var(--display)}
+.t-item small{color:var(--on-ink-muted);font-size:.8rem}
+
+/* accreditation marquee */
+.acc-strip{background:var(--paper-2);padding:20px 0 22px;overflow:hidden;border-bottom:1px solid var(--line)}
+.acc-strip .eyebrow{text-align:center;margin-bottom:14px}
+.marquee{display:flex;width:max-content;animation:slide 38s linear infinite}
+.marquee:hover{animation-play-state:paused}
+@keyframes slide{to{transform:translateX(-50%)}}
+.m-item{display:flex;align-items:center;gap:10px;padding:0 34px;font:800 1rem/1 var(--display);color:var(--on-paper-2);white-space:nowrap}
+.m-item svg{width:22px;height:22px;color:var(--brand-dp)}
+
+/* services: photo cards with zoom on hover */
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:48px}
+.svc{position:relative;overflow:hidden;border-radius:16px;min-height:380px;display:flex;flex-direction:column;justify-content:flex-end;isolation:isolate;color:#fff;text-decoration:none;box-shadow:0 18px 44px -28px rgba(var(--ink-rgb),.6);transition:transform .35s ease,box-shadow .35s ease}
+.svc .ph{position:absolute;inset:0;z-index:-2;transform:scale(1.02);transition:transform .9s cubic-bezier(.2,.7,.2,1)}
+.svc::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(var(--ink-rgb),0) 0%,rgba(var(--ink-rgb),.25) 34%,rgba(var(--ink-rgb),.9) 72%,rgba(var(--ink-deep-rgb),.97) 100%)}
+.svc:hover{transform:translateY(-6px);box-shadow:0 30px 56px -26px rgba(var(--ink-rgb),.7)}
+.svc:hover .ph{transform:scale(1.1)}
+.svc-body{padding:24px}
+.svc-ico{width:42px;height:42px;border-radius:10px;background:var(--brand);color:var(--ink);display:grid;place-items:center;margin-bottom:14px}
+.svc-ico svg{width:22px;height:22px}
+.svc h3{font-size:1.3rem;font-weight:800}
+.svc p{color:#D5DCE5;font-size:.92rem;margin-top:8px}
+.svc .more{display:inline-flex;align-items:center;gap:6px;margin-top:12px;font:700 .84rem/1 var(--display);color:var(--brand)}
+.svc .more svg{width:15px;height:15px;transition:transform .25s}
+.svc:hover .more svg{transform:translateX(4px)}
+.also{margin-top:34px;display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+.also span{display:inline-flex;align-items:center;gap:8px;padding:9px 16px;border-radius:999px;background:var(--paper-2);border:1px solid var(--line);font-weight:600;font-size:.88rem;color:var(--on-paper-2)}
+.also span svg{width:15px;height:15px;color:var(--brand-dp)}
+
+/* before & after: tilted frames that straighten, plus a drag slider */
+.ba-cases{display:flex;flex-direction:column;gap:84px;margin-top:64px}
+.case{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,6vw,80px);align-items:center}
+.case:nth-child(even) .case-media{order:2}
+.case-media{display:flex;justify-content:center}
+.case-frame{position:relative;width:100%;max-width:560px;aspect-ratio:4/3;border-radius:14px;overflow:hidden;box-shadow:0 34px 70px -34px rgba(var(--ink-rgb),.65);transform:rotate(-1.8deg);transition:transform .5s cubic-bezier(.2,.7,.2,1)}
+.case:nth-child(even) .case-frame{transform:rotate(1.8deg)}
+.case:hover .case-frame{transform:rotate(0) scale(1.015)}
+.case-frame>.ph{position:absolute;inset:0}
+.case-meta .eyebrow{color:var(--brand-dp)}
+.case-meta h3{font-size:clamp(24px,3vw,32px);font-weight:800;color:var(--ink);margin-top:8px}
+.case-meta p{color:var(--on-paper-2);margin-top:12px;max-width:460px}
+.case-meta blockquote{margin:18px 0 0;padding:14px 18px;border-left:3px solid var(--brand);background:#fff;border-radius:0 10px 10px 0;font-size:.94rem;color:var(--on-paper-2);max-width:460px}
+.case-meta blockquote cite{display:block;font-style:normal;font-weight:700;font-size:.82rem;color:var(--ink);margin-top:6px}
+.hint{font-size:.85rem;font-style:italic;color:var(--muted);margin-top:12px}
+.ba-tag{position:absolute;top:14px;z-index:3;font:700 .66rem/1 var(--display);letter-spacing:.12em;text-transform:uppercase;color:#fff;background:rgba(var(--ink-rgb),.72);padding:7px 12px;border-radius:999px;pointer-events:none}
+.ba-tag.l{left:14px}.ba-tag.r{right:14px}
+.ba-slider{--pos:50%;cursor:ew-resize;touch-action:pan-y;user-select:none;-webkit-user-select:none}
+.case:hover .ba-slider{transform:rotate(0)}
+.ba-slider .ph{position:absolute;inset:0}
+.ba-before{clip-path:inset(0 calc(100% - var(--pos)) 0 0);z-index:1}
+.ba-line{position:absolute;top:0;bottom:0;left:var(--pos);width:3px;margin-left:-1.5px;background:#fff;z-index:2;pointer-events:none}
+.ba-knob{position:absolute;top:50%;left:var(--pos);width:48px;height:48px;margin:-24px 0 0 -24px;border-radius:50%;background:#fff;box-shadow:0 6px 18px rgba(0,0,0,.3);display:grid;place-items:center;color:var(--ink);z-index:3;pointer-events:none}
+.ba-knob svg{width:22px;height:22px}
+.ba-range{position:absolute;inset:0;width:100%;height:100%;opacity:0;margin:0;cursor:ew-resize;z-index:4}
+
+/* gallery bento */
+.gal-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));grid-auto-rows:220px;gap:12px;margin-top:46px}
+.gal-item{position:relative;border-radius:16px;overflow:hidden;box-shadow:0 14px 34px -24px rgba(var(--ink-rgb),.55)}
+.gal-item .ph{position:absolute;inset:0;transition:transform .7s cubic-bezier(.22,1,.36,1),filter .7s}
+.gal-item:hover .ph{transform:scale(1.07)}
+.gal-item::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 45%,rgba(var(--ink-deep-rgb),.5) 70%,rgba(var(--ink-deep-rgb),.88) 100%);pointer-events:none}
+.gal-item figcaption{position:absolute;left:18px;bottom:16px;right:18px;z-index:2;color:#fff;font:800 1rem/1.2 var(--display);transform:translateY(4px);transition:transform .35s}
+.gal-item:hover figcaption{transform:none}
+.gal-item figcaption small{display:block;font:600 .7rem/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--brand-lt);margin-bottom:6px}
+.g-big{grid-column:span 2;grid-row:span 2}
+.g-wide{grid-column:span 2}
+.g-tall{grid-row:span 2}
+.gal-grid figure{margin:0}
+.gal-foot{text-align:center;margin-top:34px}
+
+/* why us */
+.why-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(30px,6vw,80px);align-items:center}
+.why-list{list-style:none;padding:0;margin:28px 0 32px;display:grid;gap:20px}
+.why-list li{display:flex;gap:16px}
+.why-ico{width:42px;height:42px;border-radius:10px;background:var(--brand);color:var(--ink);display:grid;place-items:center;flex:none}
+.why-ico svg{width:21px;height:21px}
+.why-list b{display:block;font:800 1.06rem/1.25 var(--display);color:#fff}
+.why-list span{color:var(--on-ink-2);font-size:.94rem}
+.why-photo{position:relative}
+.why-photo .main{aspect-ratio:4/5;border-radius:16px;box-shadow:0 40px 80px -30px rgba(0,0,0,.65);transform:rotate(1.8deg);transition:transform .5s cubic-bezier(.2,.7,.2,1)}
+.why-photo:hover .main{transform:rotate(0)}
+.since{position:absolute;left:-28px;bottom:36px;background:var(--brand);color:var(--ink);border-radius:14px;padding:18px 22px;box-shadow:0 20px 40px -18px rgba(0,0,0,.6);transform:rotate(-3deg)}
+.since b{display:block;font:900 2.6rem/1 var(--display)}
+.since small{display:block;font:800 .7rem/1.3 var(--display);letter-spacing:.14em;text-transform:uppercase;margin-top:4px}
+
+/* process */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:48px;counter-reset:s}
+.step{background:#fff;border:1px solid var(--line);border-radius:16px;padding:28px 26px;position:relative;box-shadow:0 10px 30px -24px rgba(var(--ink-rgb),.4);transition:transform .3s,box-shadow .3s}
+.step:hover{transform:translateY(-4px);box-shadow:0 24px 44px -26px rgba(var(--ink-rgb),.5)}
+.step::before{counter-increment:s;content:"0" counter(s);font:900 2.8rem/1 var(--display);color:var(--paper-3);position:absolute;right:22px;top:20px}
+.step h3{font-size:1.2rem;font-weight:800;color:var(--ink);margin-top:16px}
+.step p{color:var(--on-paper-2);font-size:.95rem;margin-top:8px}
+
+/* reviews */
+.rev-stats{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;margin-top:34px}
+.stat{display:flex;align-items:center;gap:14px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px 22px;box-shadow:0 8px 24px -20px rgba(var(--ink-rgb),.5)}
+.stat svg{width:30px;height:30px;flex:none}
+.stat b{font:900 1.6rem/1 var(--display);color:var(--ink)}
+.stat b small{font-size:.9rem}
+.stat span{display:block;font-size:.8rem;color:var(--muted)}
+.rev-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:40px}
+.rev{background:#fff;border:1px solid var(--line);border-radius:16px;padding:26px 26px 20px;display:flex;flex-direction:column;box-shadow:0 12px 34px -26px rgba(var(--ink-rgb),.45);transition:transform .3s,box-shadow .3s}
+.rev:hover{transform:translateY(-4px);box-shadow:0 26px 50px -28px rgba(var(--ink-rgb),.55)}
+.rev-head{display:flex;align-items:center;gap:12px}
+.avatar{width:46px;height:46px;border-radius:50%;background:var(--ink);color:var(--brand);display:grid;place-items:center;font:800 1rem/1 var(--display);flex:none}
+.rev-head b{display:block;font:800 1.02rem/1.2 var(--display);color:var(--ink)}
+.rev-head small{display:flex;align-items:center;gap:6px;color:var(--muted);font-size:.8rem}
+.rev-head small svg{width:14px;height:14px;color:var(--fb)}
+.rev-fb{margin-left:auto;width:24px;height:24px;color:var(--fb)}
+.rev h4{font-size:1rem;font-weight:800;color:var(--ink);margin-top:16px}
+.rev p{color:var(--on-paper-2);margin-top:12px;font-size:.96rem}
+.reply{margin-top:16px;padding:12px 14px;background:var(--paper-2);border-radius:10px;font-size:.88rem;color:var(--on-paper-2)}
+.reply b{display:block;font:700 .74rem/1.2 var(--display);letter-spacing:.08em;text-transform:uppercase;color:var(--brand-dp);margin-bottom:4px}
+.rev-foot{margin-top:auto;padding-top:16px;border-top:1px solid var(--line);font-size:.8rem;color:var(--muted)}
+.rev .rev-foot{margin-top:18px}
+.rev-cta{text-align:center;margin-top:34px}
+
+/* who we work for */
+.clients{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:40px}
+.client{border:1px solid rgba(255,255,255,.1);background:var(--ink-1);border-radius:14px;padding:24px;transition:border-color .3s,transform .3s}
+.client:hover{border-color:var(--brand);transform:translateY(-4px)}
+.client svg{width:30px;height:30px;color:var(--brand)}
+.client b{display:block;font:800 1.08rem/1.25 var(--display);color:#fff;margin-top:14px}
+.client span{display:block;color:var(--on-ink-muted);font-size:.9rem;margin-top:6px}
+
+/* about: layered photos */
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,6vw,80px);align-items:center}
+.about-pics{position:relative;padding:0 50px 60px 0}
+.about-pics .a1{aspect-ratio:4/3;border-radius:16px;box-shadow:0 34px 70px -34px rgba(var(--ink-rgb),.6);transform:rotate(-1.6deg);transition:transform .5s}
+.about-pics .a2{position:absolute;right:0;bottom:0;width:52%;aspect-ratio:1;border-radius:14px;border:6px solid #fff;box-shadow:0 24px 50px -24px rgba(var(--ink-rgb),.6);transform:rotate(3deg);transition:transform .5s}
+.about-pics:hover .a1{transform:rotate(0)}
+.about-pics:hover .a2{transform:rotate(0) translate(6px,6px)}
+.about p:not(.eyebrow):not(.sig){color:var(--on-paper-2);margin-top:16px;font-size:1.03rem}
+.sig{margin-top:22px;font:800 1.15rem/1.2 var(--display);color:var(--ink)}
+.sig small{display:block;font:500 .85rem/1.4 var(--sans);color:var(--muted)}
+.timeline{display:flex;gap:0;margin-top:28px;border-top:2px solid var(--line)}
+.timeline div{flex:1;padding-top:14px;position:relative}
+.timeline div::before{content:"";position:absolute;top:-7px;left:0;width:12px;height:12px;border-radius:50%;background:var(--brand);border:2px solid #fff;box-shadow:0 0 0 2px var(--brand)}
+.timeline b{display:block;font:900 1.3rem/1 var(--display);color:var(--ink)}
+.timeline span{display:block;font-size:.84rem;color:var(--muted);margin-top:4px;padding-right:10px}
+
+/* contact */
+.contact-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:clamp(30px,6vw,70px);align-items:start}
+.c-list{list-style:none;padding:0;margin:28px 0 0;display:grid;gap:18px}
+.c-list li{display:flex;gap:14px;align-items:center}
+.c-ico{width:44px;height:44px;border-radius:10px;background:var(--ink);color:var(--brand);display:grid;place-items:center;flex:none}
+.c-ico svg{width:20px;height:20px}
+.c-list small{display:block;font:700 .68rem/1.2 var(--display);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.c-list b,.c-list a{font:700 1.02rem/1.35 var(--display);color:var(--ink);text-decoration:none}
+.form{background:#fff;border:1px solid var(--line);border-radius:18px;padding:30px;box-shadow:0 26px 60px -36px rgba(var(--ink-rgb),.5)}
+.form h3{font-size:1.3rem;font-weight:800;color:var(--ink)}
+.form>p{color:var(--muted);font-size:.9rem;margin-top:4px}
+.f-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.form label{display:block;margin-top:16px;font:700 .7rem/1 var(--display);letter-spacing:.12em;text-transform:uppercase;color:var(--on-paper-2)}
+.form input,.form select,.form textarea{display:block;width:100%;margin-top:8px;font:inherit;font-size:.95rem;padding:13px 14px;border:1px solid #D6D1C8;border-radius:9px;background:#FCFBF9;color:var(--on-paper);transition:border-color .2s,box-shadow .2s}
+.form input:focus,.form select:focus,.form textarea:focus{outline:0;border-color:var(--brand);box-shadow:0 0 0 3px rgba(var(--brand-rgb),.25)}
+.form textarea{min-height:110px;resize:vertical}
+.form .btn{width:100%;justify-content:center;margin-top:20px;background:var(--ink);color:#fff}
+.form .btn:hover{background:var(--ink-deep)}
+.f-note{display:flex;align-items:center;justify-content:center;gap:6px;font-size:.8rem;color:var(--muted);margin-top:12px}
+.f-note svg{width:14px;height:14px;color:#2E9E5B}
+.f-done{display:none;text-align:center;padding:40px 10px}
+.f-done svg{width:52px;height:52px;color:#2E9E5B;margin:0 auto}
+.f-done h3{margin-top:14px}
+.f-done p{color:var(--muted);margin-top:8px}
+.form.sent .f-fields{display:none}.form.sent .f-done{display:block}
+
+/* final CTA */
+.final{position:relative;overflow:hidden;color:#fff;text-align:center;padding:clamp(70px,10vw,120px) 0}
+.final .ph{position:absolute;inset:-6%;z-index:0;transform:scale(1.05)}
+.final::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(135deg,rgba(var(--brand-rgb),.5),rgba(var(--ink-rgb),.82) 50%,rgba(var(--ink-deep-rgb),.9))}
+.final .wrap{position:relative;z-index:2}
+.final h2{font-size:clamp(30px,5vw,56px);font-weight:900;text-transform:uppercase;max-width:800px;margin:0 auto}
+.final p{color:#E3E8EF;margin:16px auto 0;max-width:560px;font-size:1.05rem}
+.final .hero-cta{margin-top:30px}
+
+/* footer */
+footer{background:var(--ink-deep);color:var(--on-ink-muted);padding:60px 0 28px;font-size:.92rem}
+.f-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.1fr;gap:34px}
+footer h4{font:800 .76rem/1 var(--display);letter-spacing:.18em;text-transform:uppercase;color:var(--brand);margin-bottom:18px}
+footer ul{list-style:none;padding:0;margin:0;display:grid;gap:10px}
+footer a{text-decoration:none;transition:color .2s}
+footer a:hover{color:#fff}
+footer .logo{margin-bottom:16px}
+.f-acc{display:flex;flex-wrap:wrap;gap:10px;margin-top:40px;padding-top:24px;border-top:1px solid rgba(255,255,255,.08);align-items:center}
+.f-acc span{padding:8px 14px;border-radius:999px;border:1px solid rgba(255,255,255,.14);font-size:.8rem;color:var(--on-ink-2)}
+.f-base{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;margin-top:24px;padding-top:20px;border-top:1px solid rgba(255,255,255,.08);font-size:.82rem}
+
+/* floating call button (mobile) */
+.fab{position:fixed;right:18px;bottom:18px;z-index:60;width:58px;height:58px;border-radius:50%;background:var(--brand);color:var(--ink);display:none;place-items:center;box-shadow:0 12px 30px rgba(0,0,0,.35)}
+.fab svg{width:26px;height:26px}
+
+/* scroll reveal */
+.rv{opacity:0;transform:translateY(26px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}.hero-slide{transform:none}}
+
+/* responsive */
+@media (max-width:1020px){
+  .nav-links{display:none}
+  .nav-links.open{display:flex;flex-direction:column;position:absolute;top:76px;left:0;right:0;background:var(--ink);padding:16px var(--pad) 24px;gap:16px}
+  .burger{display:block}
+  .svc-grid{grid-template-columns:repeat(2,1fr)}
+  .clients{grid-template-columns:repeat(2,1fr)}
+  .f-grid{grid-template-columns:1fr 1fr}
+  .trust .wrap{grid-template-columns:repeat(2,1fr)}
+  .t-item{justify-content:flex-start}
+}
+@media (max-width:760px){
+  .nav-call{display:none}
+  .fab{display:grid}
+  .svc-grid,.steps,.rev-grid,.why-grid,.about-grid,.contact-grid,.case{grid-template-columns:1fr}
+  .case:nth-child(even) .case-media{order:0}
+  .case-frame,.case:nth-child(even) .case-frame{transform:none}
+  .svc{min-height:320px}
+  .gal-grid{grid-template-columns:1fr 1fr;grid-auto-rows:160px}
+  .g-big{grid-column:span 2;grid-row:span 2}
+  .since{left:12px;bottom:-18px}
+  .why-photo{margin-bottom:20px}
+  .about-pics{padding:0 26px 40px 0}
+  .f-row{grid-template-columns:1fr}
+  .clients{grid-template-columns:1fr}
+  .f-grid{grid-template-columns:1fr}
+  .hero{min-height:620px}
+  .hero-cta .btn{width:100%;justify-content:center}
+  .timeline{flex-wrap:wrap}
+  .logo-txt small{font-size:.54rem;letter-spacing:.14em}
+  .logo-txt b{font-size:1rem}
+  .pill{font-size:.6rem;letter-spacing:.12em;padding:8px 12px}
+  .trust .wrap{grid-template-columns:1fr 1fr;gap:18px 12px}
+  .t-item{align-items:flex-start}
+  .t-item svg{width:22px;height:22px}
+  .t-item b{font-size:.88rem}
+  .t-item small{font-size:.74rem;line-height:1.35;display:block}
+  .also span{font-size:.8rem;padding:7px 12px}
+}
+.hero .ph.missing::before{display:none}
+</style>
+</head>
+<body>
+
+<!-- Inline icon set -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></symbol>
+    <symbol id="i-quote" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 13h6M9 17h4"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol>
+    <symbol id="i-family" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.9M16 3.1a4 4 0 0 1 0 7.8"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></symbol>
+    <symbol id="i-award" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.5 12.9 17 22l-5-3-5 3 1.5-9.1"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></symbol>
+    <symbol id="i-home" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 10 9-7 9 7v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></symbol>
+    <symbol id="i-brick" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="1"/><path d="M3 9.3h18M3 14.7h18M9 4v5.3M15 9.3v5.4M9 14.7V20"/></symbol>
+    <symbol id="i-access" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="4.5" r="2"/><path d="M10 9h4l-1 5h4l2 6M12 14a5 5 0 1 1-6 5"/></symbol>
+    <symbol id="i-saw" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17 17 3l4 4L7 21H3z"/><path d="m14 6 4 4M6 14l1.5 1.5M9 11l1.5 1.5M12 8l1.5 1.5"/></symbol>
+    <symbol id="i-bath" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16v3a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5zM6 12V5a2 2 0 0 1 3.5-1.3M6 20l-1 2M18 20l1 2"/></symbol>
+    <symbol id="i-roof" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12 12 4l10 8M5 10v10h14V10"/><path d="M16 6V3h2v4.6"/></symbol>
+    <symbol id="i-dig" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4l6 6M17 7 8 16M4 20l3-1 2-2-2-2-2 2z"/><path d="M3 21h18"/></symbol>
+    <symbol id="i-beam" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 5h18M3 19h18M12 5v14M8 5v2M16 5v2M8 17v2M16 17v2"/></symbol>
+    <symbol id="i-council" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V10M19 21V10M9 21V10M15 21V10M2 10l10-6 10 6z"/></symbol>
+    <symbol id="i-plan" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3h18v18H3zM3 9h8v12M11 14h10"/></symbol>
+    <symbol id="i-key" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="7.5" cy="15.5" r="4.5"/><path d="m10.7 12.3 9.3-9.3M16 7l3 3M18 5l2 2"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></symbol>
+    <symbol id="i-lr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m9 6-6 6 6 6M15 6l6 6-6 6"/></symbol>
+    <symbol id="i-fb" viewBox="0 0 24 24"><path fill="currentColor" d="M24 12a12 12 0 1 0-13.9 11.9v-8.4H7.1V12h3V9.4c0-3 1.8-4.7 4.5-4.7 1.3 0 2.7.2 2.7.2v3h-1.5c-1.5 0-2 .9-2 1.9V12h3.4l-.5 3.5h-2.9v8.4A12 12 0 0 0 24 12z"/></symbol>
+    <symbol id="i-thumb" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 10v12M15 5.9 14 10h5.8a2 2 0 0 1 1.9 2.6l-2.3 8A2 2 0 0 1 17.4 22H4a2 2 0 0 1-2-2v-8a2 2 0 0 1 2-2h2.8a2 2 0 0 0 1.8-1.1L12 2a3.1 3.1 0 0 1 3 3.9z"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></symbol>
+    <symbol id="i-paint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="16" height="6" rx="1"/><path d="M19 6h2v5h-9v3M10 14h4v7h-4z"/></symbol>
+  </defs>
+</svg>
+
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Stringfellow Building Contractors, home">
+      <span class="logo-mark">S</span>
+      <span class="logo-txt"><b>Stringfellow</b><small>Building Contractors &middot; Est. 1969</small></span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#work">Our Work</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a class="nav-call" href="tel:01257792116">
+      <svg><use href="#i-phone"/></svg>
+      <span><small>Call us today</small><b>01257 792116</b></span>
+    </a>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><svg><use href="#i-menu"/></svg></button>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="top">
+  <div class="hero-slide ph on" data-img="assets/img/hero-1.jpg" data-label="Hero photo 1"></div>
+  <div class="hero-slide ph" data-img="assets/img/hero-2.jpg" data-label="Hero photo 2"></div>
+  <div class="hero-slide ph" data-img="assets/img/hero-3.jpg" data-label="Hero photo 3"></div>
+  <div class="wrap hero-in">
+    <span class="pill"><i></i> Family run since 1969 &middot; Three generations</span>
+    <h1>Trusted builders for <em>generations</em></h1>
+    <p class="hero-sub">Extensions, renovations, kitchens, bathrooms and adaptations across the North West. One family firm of time-served tradesmen, from groundworks to the final coat of paint.</p>
+    <div class="hero-cta">
+      <a class="btn btn-brand" href="#contact"><svg><use href="#i-quote"/></svg>Get a free quote</a>
+      <a class="btn btn-ghost" href="tel:01257792116"><svg><use href="#i-phone"/></svg>Call 01257 792116</a>
+    </div>
+  </div>
+  <div class="hero-dots" id="heroDots"></div>
+</section>
+
+<section class="trust" aria-label="Why choose us">
+  <div class="wrap">
+    <div class="t-item"><svg><use href="#i-quote"/></svg><div><b>Free Quotes</b><small>Site visits at no cost</small></div></div>
+    <div class="t-item"><svg><use href="#i-family"/></svg><div><b>Est. 1969</b><small>Third generation family firm</small></div></div>
+    <div class="t-item"><svg><use href="#i-pin"/></svg><div><b>Coppull Based</b><small>Near Chorley, Lancashire</small></div></div>
+    <div class="t-item"><svg><use href="#i-thumb"/></svg><div><b>100% Recommend</b><small>Every review on Facebook</small></div></div>
+  </div>
+</section>
+
+<section class="acc-strip" aria-label="Accreditations">
+  <p class="eyebrow">Accredited, registered and recommended</p>
+  <div class="marquee" aria-hidden="false">
+    <span class="m-item"><svg><use href="#i-award"/></svg>National Federation of Builders</span>
+    <span class="m-item"><svg><use href="#i-shield"/></svg>Lancashire Safe Trader Scheme</span>
+    <span class="m-item"><svg><use href="#i-fb"/></svg>100% recommend on Facebook</span>
+    <span class="m-item"><svg><use href="#i-family"/></svg>Family run since 1969</span>
+    <span class="m-item"><svg><use href="#i-check"/></svg>Gas Safe registered subcontractors</span>
+    <span class="m-item"><svg><use href="#i-council"/></svg>Trusted by local authorities</span>
+    <span class="m-item" aria-hidden="true"><svg><use href="#i-award"/></svg>National Federation of Builders</span>
+    <span class="m-item" aria-hidden="true"><svg><use href="#i-shield"/></svg>Lancashire Safe Trader Scheme</span>
+    <span class="m-item" aria-hidden="true"><svg><use href="#i-fb"/></svg>100% recommend on Facebook</span>
+    <span class="m-item" aria-hidden="true"><svg><use href="#i-family"/></svg>Family run since 1969</span>
+    <span class="m-item" aria-hidden="true"><svg><use href="#i-check"/></svg>Gas Safe registered subcontractors</span>
+    <span class="m-item" aria-hidden="true"><svg><use href="#i-council"/></svg>Trusted by local authorities</span>
+  </div>
+</section>
+
+<section class="pad" id="services">
+  <div class="wrap center">
+    <p class="eyebrow rv">What we do</p>
+    <h2 class="h2 rv">From groundworks to decoration</h2>
+    <p class="lead rv">A full range of building, renovation and maintenance work under one name, so one call covers the whole job.</p>
+    <div class="svc-grid" style="text-align:left">
+      <a class="svc rv" href="#contact">
+        <div class="ph" data-img="assets/img/svc-extensions.jpg" data-label="Extensions photo"></div>
+        <div class="svc-body"><span class="svc-ico"><svg><use href="#i-brick"/></svg></span><h3>Extensions and Brickwork</h3><p>Home extensions, internal blockwork, new or removed doorways and windows, garden walls and repairs.</p><span class="more">Get a quote <svg><use href="#i-arrow"/></svg></span></div>
+      </a>
+      <a class="svc rv" href="#contact">
+        <div class="ph" data-img="assets/img/svc-adaptations.jpg" data-label="Adaptations photo"></div>
+        <div class="svc-body"><span class="svc-ico"><svg><use href="#i-access"/></svg></span><h3>Disabled Adaptations</h3><p>Specialists in wet rooms, access ramps, through-floor lift apertures and structural changes that make a home easier to live in.</p><span class="more">Get a quote <svg><use href="#i-arrow"/></svg></span></div>
+      </a>
+      <a class="svc rv" href="#contact">
+        <div class="ph" data-img="assets/img/svc-bathrooms.jpg" data-label="Bathroom photo"></div>
+        <div class="svc-body"><span class="svc-ico"><svg><use href="#i-bath"/></svg></span><h3>Kitchens and Bathrooms</h3><p>Full bathroom refurbishments, kitchen refits, tiling, plumbing, and boiler work by Gas Safe registered subcontractors.</p><span class="more">Get a quote <svg><use href="#i-arrow"/></svg></span></div>
+      </a>
+      <a class="svc rv" href="#contact">
+        <div class="ph" data-img="assets/img/svc-joinery.jpg" data-label="Joinery photo"></div>
+        <div class="svc-body"><span class="svc-ico"><svg><use href="#i-saw"/></svg></span><h3>Joinery and Timber Workshop</h3><p>Our own workshop makes gates, windows, doors and canopies. On site we fit staircases, kitchens, studwork and bespoke storage.</p><span class="more">Get a quote <svg><use href="#i-arrow"/></svg></span></div>
+      </a>
+      <a class="svc rv" href="#contact">
+        <div class="ph" data-img="assets/img/svc-roofing.jpg" data-label="Roofing photo"></div>
+        <div class="svc-body"><span class="svc-ico"><svg><use href="#i-roof"/></svg></span><h3>Roofing</h3><p>Tiled, slate and flat roofs, from minor repairs to new roofs, with guttering, fascias, soffits and leadwork.</p><span class="more">Get a quote <svg><use href="#i-arrow"/></svg></span></div>
+      </a>
+      <a class="svc rv" href="#contact">
+        <div class="ph" data-img="assets/img/svc-groundworks.jpg" data-label="Groundworks photo"></div>
+        <div class="svc-body"><span class="svc-ico"><svg><use href="#i-dig"/></svg></span><h3>Groundworks and Landscaping</h3><p>Foundations, drainage and manholes, concrete bases, flagging, paving, driveways and fencing.</p><span class="more">Get a quote <svg><use href="#i-arrow"/></svg></span></div>
+      </a>
+    </div>
+    <div class="also rv">
+      <span><svg><use href="#i-beam"/></svg>Steelwork and lintels</span>
+      <span><svg><use href="#i-check"/></svg>Plastering and damp</span>
+      <span><svg><use href="#i-check"/></svg>Wall and floor tiling</span>
+      <span><svg><use href="#i-check"/></svg>Electrical works</span>
+      <span><svg><use href="#i-paint"/></svg>Interior and exterior decorating</span>
+      <span><svg><use href="#i-plan"/></svg>Plans and planning applications</span>
+      <span><svg><use href="#i-check"/></svg>Building Control liaison</span>
+      <span><svg><use href="#i-check"/></svg>Insurance work</span>
+    </div>
+  </div>
+</section>
+
+<section class="pad tint" id="work">
+  <div class="wrap">
+    <div class="center">
+      <p class="eyebrow rv">See the difference</p>
+      <h2 class="h2 rv">Before and after</h2>
+      <p class="lead rv">Three recent jobs, in our customers' own words.</p>
+    </div>
+    <div class="ba-cases">
+      <article class="case rv">
+        <div class="case-media">
+          <div class="case-frame ba-slider">
+            <div class="ph ba-after" data-img="assets/img/case1-after.jpg" data-label="Extension, after"></div>
+            <div class="ph ba-before" data-img="assets/img/case1-before.jpg" data-label="Extension, before"></div>
+            <span class="ba-tag l">Before</span><span class="ba-tag r">After</span>
+            <span class="ba-line"></span><span class="ba-knob"><svg><use href="#i-lr"/></svg></span>
+            <input class="ba-range" type="range" min="0" max="100" value="50" aria-label="Drag to compare before and after">
+          </div>
+        </div>
+        <div class="case-meta">
+          <p class="eyebrow">Extension and renovation</p>
+          <h3>Side Extension Renovation</h3>
+          <p>The storage room turned into a playroom, a new downstairs toilet, the gas meter moved, the utility room renovated and a new sloping roof over the lot.</p>
+          <blockquote>"From start to finish, Stringfellows were great!"<cite>Amanda Harty, Facebook</cite></blockquote>
+          <p class="hint">Drag the slider to compare.</p>
+        </div>
+      </article>
+      <article class="case rv">
+        <div class="case-media">
+          <div class="case-frame ba-slider">
+            <div class="ph ba-after" data-img="assets/img/case2-after.jpg" data-label="Kitchen, after"></div>
+            <div class="ph ba-before" data-img="assets/img/case2-before.jpg" data-label="Kitchen, before"></div>
+            <span class="ba-tag l">Before</span><span class="ba-tag r">After</span>
+            <span class="ba-line"></span><span class="ba-knob"><svg><use href="#i-lr"/></svg></span>
+            <input class="ba-range" type="range" min="0" max="100" value="50" aria-label="Drag to compare before and after">
+          </div>
+        </div>
+        <div class="case-meta">
+          <p class="eyebrow">Kitchens</p>
+          <h3>Kitchen Renovation</h3>
+          <p>A new oven and hob, an extractor fan, re-tiling and re-decorating. Priced within a day and started within a week.</p>
+          <blockquote>"We were very happy with the high standard and speed of the work."<cite>David Thorp, Facebook</cite></blockquote>
+          <p class="hint">Drag the slider to compare.</p>
+        </div>
+      </article>
+      <article class="case rv">
+        <div class="case-media">
+          <div class="case-frame ba-slider">
+            <div class="ph ba-after" data-img="assets/img/case3-after.jpg" data-label="Bathroom, after"></div>
+            <div class="ph ba-before" data-img="assets/img/case3-before.jpg" data-label="Bathroom, before"></div>
+            <span class="ba-tag l">Before</span><span class="ba-tag r">After</span>
+            <span class="ba-line"></span><span class="ba-knob"><svg><use href="#i-lr"/></svg></span>
+            <input class="ba-range" type="range" min="0" max="100" value="50" aria-label="Drag to compare before and after">
+          </div>
+        </div>
+        <div class="case-meta">
+          <p class="eyebrow">Bathrooms</p>
+          <h3>New Floor and Bathroom</h3>
+          <p>The upstairs bathroom floor replaced and a new bathroom fitted, plus making good the work other trades had left behind.</p>
+          <blockquote>"A truly amazing organisation and team."<cite>Matt McDaid, Facebook</cite></blockquote>
+          <p class="hint">Drag the slider to compare.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="pad">
+  <div class="wrap">
+    <div class="center">
+      <p class="eyebrow rv">Recent work</p>
+      <h2 class="h2 rv">Project gallery</h2>
+      <p class="lead rv">Extensions, kitchens, bathrooms, joinery and groundworks, all photographed on our own jobs.</p>
+    </div>
+    <div class="gal-grid">
+      <figure class="gal-item g-big rv"><div class="ph" data-img="assets/img/gal-1.jpg" data-label="Gallery photo 1"></div><figcaption><small>Extensions</small>Single Storey Extension</figcaption></figure>
+      <figure class="gal-item rv"><div class="ph" data-img="assets/img/gal-2.jpg" data-label="Gallery photo 2"></div><figcaption><small>Joinery</small>Bespoke Timber Gates</figcaption></figure>
+      <figure class="gal-item rv"><div class="ph" data-img="assets/img/gal-3.jpg" data-label="Gallery photo 3"></div><figcaption><small>Bathrooms</small>Accessible Wet Room</figcaption></figure>
+      <figure class="gal-item g-wide rv"><div class="ph" data-img="assets/img/gal-4.jpg" data-label="Gallery photo 4"></div><figcaption><small>Groundworks</small>Paving and Driveway</figcaption></figure>
+      <figure class="gal-item g-wide rv"><div class="ph" data-img="assets/img/gal-5.jpg" data-label="Gallery photo 5"></div><figcaption><small>Roofing</small>Slate Roof</figcaption></figure>
+      <figure class="gal-item g-wide rv"><div class="ph" data-img="assets/img/gal-6.jpg" data-label="Gallery photo 6"></div><figcaption><small>Kitchens</small>Kitchen Refit</figcaption></figure>
+    </div>
+    <div class="gal-foot rv"><a class="btn btn-outline" href="#contact">Talk to us about your project <svg><use href="#i-arrow"/></svg></a></div>
+  </div>
+</section>
+
+<section class="pad dark" id="why">
+  <div class="wrap why-grid">
+    <div>
+      <p class="eyebrow rv">Why Stringfellow</p>
+      <h2 class="h2 rv">A family business built on trust</h2>
+      <p class="lead rv">Over five decades of building in the North West. The name on the van has stayed the same since 1969, and so has the way we work.</p>
+      <ul class="why-list">
+        <li class="rv"><span class="why-ico"><svg><use href="#i-home"/></svg></span><div><b>Every trade under one roof</b><span>Building, renovation and maintenance, from the first trench to the last coat of paint.</span></div></li>
+        <li class="rv"><span class="why-ico"><svg><use href="#i-family"/></svg></span><div><b>Time-served tradesmen</b><span>Our own experienced team, backed by trusted, accredited subcontractors.</span></div></li>
+        <li class="rv"><span class="why-ico"><svg><use href="#i-quote"/></svg></span><div><b>Free quotes, clear prices</b><span>Free site visits and estimates, with transparent pricing and no surprises.</span></div></li>
+        <li class="rv"><span class="why-ico"><svg><use href="#i-shield"/></svg></span><div><b>Accredited and registered</b><span>Members of the National Federation of Builders and the Lancashire Safe Trader Scheme.</span></div></li>
+      </ul>
+      <a class="btn btn-brand rv" href="#contact">Speak to our team <svg><use href="#i-arrow"/></svg></a>
+    </div>
+    <div class="why-photo rv">
+      <div class="main ph" data-img="assets/img/why.jpg" data-label="Team on site"></div>
+      <div class="since"><b>1969</b><small>Three generations<br>of builders</small></div>
+    </div>
+  </div>
+</section>
+
+<section class="pad tint">
+  <div class="wrap">
+    <div class="center">
+      <p class="eyebrow rv">How it works</p>
+      <h2 class="h2 rv">From first call to final tidy</h2>
+      <p class="lead rv">The same three steps our customers mention again and again.</p>
+    </div>
+    <div class="steps">
+      <div class="step rv"><span class="why-ico"><svg><use href="#i-phone"/></svg></span><h3>Call or message us</h3><p>Nicola in the office takes your enquiry and gets a visit booked in, usually within days.</p></div>
+      <div class="step rv"><span class="why-ico"><svg><use href="#i-quote"/></svg></span><h3>Free visit and quote</h3><p>Mark comes out, looks at the job and gives you a clear, fair price. No obligation.</p></div>
+      <div class="step rv"><span class="why-ico"><svg><use href="#i-key"/></svg></span><h3>We build, and tidy up</h3><p>Our tradesmen keep you updated, keep the job moving and leave your home clean at the end of every day.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="pad" id="reviews">
+  <div class="wrap">
+    <div class="center">
+      <p class="eyebrow rv">Reviews</p>
+      <h2 class="h2 rv">What our customers say</h2>
+      <p class="lead rv">Real reviews from Facebook, word for word.</p>
+      <div class="rev-stats rv">
+        <div class="stat"><svg style="color:var(--fb)"><use href="#i-fb"/></svg><div><b>100<small>%</small></b><span>recommend us on Facebook (6 reviews)</span></div></div>
+        <div class="stat"><svg style="color:var(--brand-dp)"><use href="#i-family"/></svg><div><b>55<small>+ yrs</small></b><span>building in the North West</span></div></div>
+      </div>
+    </div>
+    <div class="rev-grid">
+      <article class="rev rv">
+        <div class="rev-head"><span class="avatar">EQ</span><div><b>Eleanor Quin</b><small><svg><use href="#i-thumb"/></svg>Recommends Stringfellow</small></div><svg class="rev-fb"><use href="#i-fb"/></svg></div>
+        <p>"I couldn't recommend Stringfellows enough. From the start of our enquiries, Nicola was so friendly which gave us a wonderful impression of the business. Mark, who visited our home to quote, was knowledgeable and made us feel like we were in good hands. The tradesmen that came to our house over the course of the week were fantastic, friendly, SO tidy, and were a pleasure to have in our home."</p>
+        <div class="reply"><b>Reply from Stringfellow</b>Thank you very much for the lovely review Eleanor, we're very glad our lads looked after you.</div>
+        <div class="rev-foot">Review left on Facebook</div>
+      </article>
+      <article class="rev rv">
+        <div class="rev-head"><span class="avatar">AH</span><div><b>Amanda Harty</b><small><svg><use href="#i-thumb"/></svg>Recommends Stringfellow</small></div><svg class="rev-fb"><use href="#i-fb"/></svg></div>
+        <h4>Great Company: Extension and Renovation</h4>
+        <p>"We had some building work completed on our property and can honestly say from start to finish, Stringfellows were great! We had the whole side extension renovated with the storage room being made into a playroom, a downstairs toilet built, gas meter moved and utility room renovated. The build included a new sloping roof and the team worked incredibly hard to keep the project moving."</p>
+        <div class="rev-foot">Review left on Facebook</div>
+      </article>
+      <article class="rev rv">
+        <div class="rev-head"><span class="avatar">DT</span><div><b>David Thorp</b><small><svg><use href="#i-thumb"/></svg>Recommends Stringfellow</small></div><svg class="rev-fb"><use href="#i-fb"/></svg></div>
+        <p>"Mark &amp; Joe recently managed our kitchen renovations, replacing an oven &amp; hob, installing an extractor fan, re-tiling and re-decorating. Mark came within a day to price up the job and work started within a week. We were very happy with the high standard and speed of the work. Our house was always left clean and tidy at the end of each day, and we were constantly kept in the loop of the status of the work."</p>
+        <div class="rev-foot">Review left on Facebook</div>
+      </article>
+      <article class="rev rv">
+        <div class="rev-head"><span class="avatar">MM</span><div><b>Matt McDaid</b><small><svg><use href="#i-thumb"/></svg>Recommends Stringfellow</small></div><svg class="rev-fb"><use href="#i-fb"/></svg></div>
+        <p>"A truly amazing organisation and team. I bought a house last year that needed significant improvement and renovations. However pretty much from the start I was continually let down by various trade persons, bar one. Part of my renovation was to replace the floor in the upstairs bathroom and then obviously refit a new bathroom."</p>
+        <div class="reply"><b>Reply from Stringfellow</b>Thank you very much for this fantastic review Matt, we're so glad we've restored some faith in the building trade for you!</div>
+        <div class="rev-foot">Review left on Facebook</div>
+      </article>
+    </div>
+    <div class="rev-cta rv"><a class="btn btn-fb" href="https://www.facebook.com/stringfellowbuilders/reviews" target="_blank" rel="noopener"><svg><use href="#i-fb"/></svg>Read all our reviews</a></div>
+  </div>
+</section>
+
+<section class="pad dark">
+  <div class="wrap">
+    <div class="center">
+      <p class="eyebrow rv">Who we work for</p>
+      <h2 class="h2 rv">Trusted at every scale</h2>
+      <p class="lead rv">From a single repair to a major refurbishment, at competitive rates.</p>
+    </div>
+    <div class="clients">
+      <div class="client rv"><svg><use href="#i-home"/></svg><b>Homeowners</b><span>Extensions, renovations, kitchens, bathrooms and repairs.</span></div>
+      <div class="client rv"><svg><use href="#i-council"/></svg><b>Local Authorities</b><span>Adaptations, maintenance and planned works.</span></div>
+      <div class="client rv"><svg><use href="#i-plan"/></svg><b>Commercial Architects</b><span>Building to your drawings, with Building Control handled.</span></div>
+      <div class="client rv"><svg><use href="#i-key"/></svg><b>Housing Associations</b><span>Reliable repairs, refurbishments and void works.</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="pad about" id="about">
+  <div class="wrap about-grid">
+    <div class="about-pics rv">
+      <div class="a1 ph" data-img="assets/img/about-1.jpg" data-label="Family / team photo"></div>
+      <div class="a2 ph" data-img="assets/img/about-2.jpg" data-label="Van or workshop photo"></div>
+    </div>
+    <div>
+      <p class="eyebrow rv">About us</p>
+      <h2 class="h2 rv">Three generations of Stringfellow</h2>
+      <p class="rv">MJ Stringfellow &amp; Sons was established in 1969 and is now run by the third generation of the family. For over five decades we've been providing construction and maintenance services from our base in Coppull, near Chorley.</p>
+      <p class="rv">We work for private homeowners, local authorities, commercial architects and housing associations, with time-served tradesmen and trusted subcontractors. We can draw up plans, help with planning applications and deal with Building Control, so you have one team from the first idea to the finished job.</p>
+      <div class="timeline rv">
+        <div><b>1969</b><span>MJ Stringfellow &amp; Sons founded</span></div>
+        <div><b>3rd</b><span>Generation running the business</span></div>
+        <div><b>Today</b><span>Working across the North West</span></div>
+      </div>
+      <p class="sig rv">The Stringfellow family<small>Stringfellow Building Contractors Ltd, Coppull</small></p>
+    </div>
+  </div>
+</section>
+
+<section class="pad tint" id="contact">
+  <div class="wrap contact-grid">
+    <div>
+      <p class="eyebrow rv">Get in touch</p>
+      <h2 class="h2 rv">Request your free quote</h2>
+      <p class="lead rv">Tell us about your project, whatever its size, and we'll arrange a free consultation and quote. Prefer to talk? Give us a call.</p>
+      <ul class="c-list">
+        <li class="rv"><span class="c-ico"><svg><use href="#i-phone"/></svg></span><div><small>Call us</small><a href="tel:01257792116">01257 792116</a></div></li>
+        <li class="rv"><span class="c-ico"><svg><use href="#i-mail"/></svg></span><div><small>Email</small><a href="mailto:mjstringfellow@aol.com">mjstringfellow@aol.com</a></div></li>
+        <li class="rv"><span class="c-ico"><svg><use href="#i-pin"/></svg></span><div><small>Office</small><b>1A Darlington Street, Coppull, Chorley PR7 5AB</b></div></li>
+        <li class="rv"><span class="c-ico"><svg><use href="#i-fb"/></svg></span><div><small>Facebook</small><a href="https://www.facebook.com/stringfellowbuilders" target="_blank" rel="noopener">@stringfellowbuilders</a></div></li>
+      </ul>
+    </div>
+    <form class="form rv" id="quoteForm" novalidate>
+      <div class="f-fields">
+        <h3>Tell us about your project</h3>
+        <p>We'll come back to you to book a free site visit.</p>
+        <div class="f-row">
+          <label>Your name<input type="text" placeholder="e.g. Jane Smith" autocomplete="name"></label>
+          <label>Phone number<input type="tel" placeholder="e.g. 07700 900000" autocomplete="tel"></label>
+        </div>
+        <label>Email address<input type="email" placeholder="e.g. jane@example.com" autocomplete="email"></label>
+        <label>What do you need?
+          <select><option>Please choose</option><option>Extension or brickwork</option><option>Kitchen or bathroom</option><option>Disabled adaptation</option><option>Joinery</option><option>Roofing</option><option>Groundworks or landscaping</option><option>Something else</option></select>
+        </label>
+        <label>Details<textarea placeholder="What needs doing, your town or postcode, and any timescale."></textarea></label>
+        <button class="btn" type="submit"><svg><use href="#i-mail"/></svg>Send my enquiry</button>
+        <p class="f-note"><svg><use href="#i-check"/></svg>No spam. Your details only go to Stringfellow.</p>
+      </div>
+      <div class="f-done" role="status">
+        <svg><use href="#i-check"/></svg>
+        <h3>Thanks, we've got it</h3>
+        <p>We'll be in touch shortly to arrange your free quote.</p>
+      </div>
+    </form>
+  </div>
+</section>
+
+<section class="final">
+  <div class="ph" data-img="assets/img/cta.jpg" data-label=""></div>
+  <div class="wrap">
+    <h2 class="rv">Planning a project? Let's build it together.</h2>
+    <p class="rv">Get a free, no-obligation quote from a family firm that has been building in the North West since 1969.</p>
+    <div class="hero-cta rv">
+      <a class="btn btn-brand" href="tel:01257792116"><svg><use href="#i-phone"/></svg>Call 01257 792116</a>
+      <a class="btn btn-ghost" href="#contact"><svg><use href="#i-quote"/></svg>Request a quote</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <a class="logo" href="#top"><span class="logo-mark">S</span><span class="logo-txt"><b>Stringfellow</b><small>Building Contractors &middot; Est. 1969</small></span></a>
+        <p>Construction and maintenance services across the North West, from a third-generation family firm in Coppull, near Chorley.</p>
+      </div>
+      <div><h4>Services</h4><ul>
+        <li><a href="#services">Extensions and Brickwork</a></li>
+        <li><a href="#services">Disabled Adaptations</a></li>
+        <li><a href="#services">Kitchens and Bathrooms</a></li>
+        <li><a href="#services">Joinery</a></li>
+        <li><a href="#services">Roofing</a></li>
+        <li><a href="#services">Groundworks</a></li>
+      </ul></div>
+      <div><h4>Quick links</h4><ul>
+        <li><a href="#work">Our Work</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Get a Quote</a></li>
+      </ul></div>
+      <div><h4>Contact</h4><ul>
+        <li><a href="tel:01257792116">01257 792116</a></li>
+        <li><a href="mailto:mjstringfellow@aol.com">mjstringfellow@aol.com</a></li>
+        <li>1A Darlington Street<br>Coppull, Chorley PR7 5AB</li>
+      </ul></div>
+    </div>
+    <div class="f-acc"><span>National Federation of Builders</span><span>Lancashire Safe Trader Scheme</span><span>Gas Safe registered subcontractors</span></div>
+    <div class="f-base"><span>&copy; <span id="yr">2026</span> Stringfellow Building Contractors Ltd. All rights reserved.</span><span>Concept homepage</span></div>
+  </div>
+</footer>
+
+<a class="fab" href="tel:01257792116" aria-label="Call 01257 792116"><svg><use href="#i-phone"/></svg></a>
+
+<script>
+(function(){"use strict";
+var reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+/* image slots: load the photo, fall back to a labelled placeholder */
+document.querySelectorAll("[data-img]").forEach(function(el){
+  var src = el.getAttribute("data-img"), im = new Image();
+  im.onload = function(){ el.style.setProperty("--img", 'url("' + src + '")'); };
+  im.onerror = function(){ el.classList.add("missing"); };
+  im.src = src;
+});
+
+/* sticky header */
+var nav = document.getElementById("nav");
+function onScroll(){ nav.classList.toggle("solid", scrollY > 40); }
+addEventListener("scroll", onScroll, {passive:true}); onScroll();
+
+/* mobile menu */
+var burger = document.getElementById("burger"), links = document.getElementById("navLinks");
+burger.addEventListener("click", function(){ var o = links.classList.toggle("open"); burger.setAttribute("aria-expanded", o); nav.classList.add("solid"); });
+links.addEventListener("click", function(e){ if (e.target.tagName === "A"){ links.classList.remove("open"); burger.setAttribute("aria-expanded", false); } });
+
+/* hero crossfade */
+var slides = document.querySelectorAll(".hero-slide"), dots = document.getElementById("heroDots"), cur = 0, timer;
+slides.forEach(function(_, i){ var b = document.createElement("button"); b.setAttribute("aria-label", "Show photo " + (i + 1)); if (!i) b.className = "on"; b.onclick = function(){ go(i); restart(); }; dots.appendChild(b); });
+function go(i){
+  slides[cur].classList.remove("on"); dots.children[cur].classList.remove("on");
+  cur = i; var s = slides[cur];
+  s.style.animation = "none"; void s.offsetWidth; s.style.animation = "";
+  s.classList.add("on"); dots.children[cur].classList.add("on");
+}
+function restart(){ clearInterval(timer); if (!reduce) timer = setInterval(function(){ go((cur + 1) % slides.length); }, 6500); }
+restart();
+
+/* before / after sliders, with a one-off sweep when they come into view */
+document.querySelectorAll(".ba-slider").forEach(function(s){
+  var range = s.querySelector(".ba-range"), touched = false;
+  function set(p){ p = Math.max(0, Math.min(100, p)); s.style.setProperty("--pos", p + "%"); range.value = Math.round(p); }
+  range.addEventListener("input", function(){ touched = true; set(+range.value); });
+  if (!("IntersectionObserver" in window) || reduce) return;
+  var io = new IntersectionObserver(function(en){
+    if (!en[0].isIntersecting) return;
+    io.disconnect();
+    var steps = [28, 72, 50], i = 0;
+    (function next(){ if (touched || i >= steps.length) return; animate(steps[i++], next); })();
+  }, {threshold:.6});
+  io.observe(s);
+  function animate(to, done){
+    var from = parseFloat(s.style.getPropertyValue("--pos")) || 50, t0 = null;
+    function step(t){
+      if (touched) return;
+      if (t0 === null) t0 = t;
+      var k = Math.min(1, (t - t0) / 700), e = k < .5 ? 2*k*k : 1 - Math.pow(-2*k + 2, 2) / 2;
+      set(from + (to - from) * e);
+      if (k < 1) requestAnimationFrame(step); else setTimeout(done, 160);
+    }
+    requestAnimationFrame(step);
+  }
+});
+
+/* scroll reveal with a light stagger */
+var rv = document.querySelectorAll(".rv");
+if ("IntersectionObserver" in window && !reduce){
+  var ro = new IntersectionObserver(function(entries){
+    entries.forEach(function(en){
+      if (!en.isIntersecting) return;
+      var sibs = Array.prototype.filter.call(en.target.parentNode.children, function(c){ return c.classList.contains("rv"); });
+      en.target.style.transitionDelay = Math.min(sibs.indexOf(en.target), 5) * 70 + "ms";
+      en.target.classList.add("in"); ro.unobserve(en.target);
+    });
+  }, {threshold:.12, rootMargin:"0px 0px -40px 0px"});
+  rv.forEach(function(el){ ro.observe(el); });
+} else rv.forEach(function(el){ el.classList.add("in"); });
+
+/* demo form: no data leaves the page */
+document.getElementById("quoteForm").addEventListener("submit", function(e){ e.preventDefault(); this.classList.add("sent"); });
+
+document.getElementById("yr").textContent = new Date().getFullYear();
+})();
+</script>
+</body>
+</html>
