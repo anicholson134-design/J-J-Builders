@@ -20,6 +20,14 @@ Every image slot loads a file from `assets/img/`. If a file is missing, the slot
 | `about-1.jpg`, `about-2.jpg` | About section, layered photos (about-2 square) |
 | `cta.jpg` | Background of the final call to action |
 
+### Where the current photos came from
+
+All photos and the logo (`logo.png`) were taken from stringfellowbuilding.co.uk. Their site only has 15 job photos (700px wide), so some are used in more than one slot. `hero-1`/`svc-roofing` and `cta` come from section backgrounds on their site and may be stock images; swap them for their own shots before going live.
+
+The site has no before photos, so `case1-before.jpg`, `case2-before.jpg` and `case3-before.jpg` are still missing and show placeholders. Ask the client for before shots of those three jobs.
+
+Brand colours follow their logo and site: yellow `#FCC214` for buttons and highlights, and a deep blue built from their logo underline (`#245C9C`) in place of the old navy.
+
 ## Image effects
 
 - Hero: crossfading slides with a Ken Burns push.
